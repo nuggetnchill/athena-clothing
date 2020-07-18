@@ -1,3 +1,6 @@
 Athena Clothing - Ecommerce page
 
-(underconstruction)
+![Logo](src/assets/athena-logo.svg?raw=true "AthenaClo")
+
+(Page is Underconstruction)
+
