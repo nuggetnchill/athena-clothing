@@ -14,9 +14,9 @@ class SignUp extends React.Component {
         this.state = {
             displayName: '',
             email: '',
-            password:'',
-            confirmPassword:''
-        }
+            password: '',
+            confirmPassword: ''
+        };
     }
 
     handleSubmit= async event => {
@@ -35,13 +35,13 @@ class SignUp extends React.Component {
                 password
             );
 
-            await createUserProfileDocument(user,{displayName});
+            await createUserProfileDocument(user, { displayName });
 
             this.setState({
-              displayName: "",
-              email: "",
-              password: "",
-              confirmPassword: "",
+              displayName: '',
+              email: '',
+              password: '',
+              confirmPassword: '',
             });
         } catch (error) {
             console.log(error);
@@ -51,7 +51,7 @@ class SignUp extends React.Component {
     handleChange = event => {
         const {name, value} = event.target;
 
-        this.setState({[name]: value});
+        this.setState({ [name]: value});
     };
 
     render() {

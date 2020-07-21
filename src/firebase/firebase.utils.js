@@ -13,6 +13,7 @@ const config = {
     measurementId: "G-1090ZBM2XJ"
   };
 
+  
   export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
 
